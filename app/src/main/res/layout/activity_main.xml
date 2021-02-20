@@ -1,22 +1,23 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
-    <ImageView
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/bg"
-        android:scaleType="centerCrop" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#ff00ff00"
-        android:text="hello"
-        android:textSize="15sp"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:onClick="onTest"
-        android:clickable="true"
-        />
+        android:text="hide status and navigation bar"
+        android:textAllCaps="false"
+        android:onClick="onHideStatusAndNavigation" />
 
-</RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Full Screen"
+        android:textAllCaps="false"
+        android:onClick="onFullScreen" />
+
+</LinearLayout>
